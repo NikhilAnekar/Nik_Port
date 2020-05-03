@@ -121,4 +121,79 @@ hooks:
       runas:
     - location: 
       timeout:
-      runas:
+
+version: 0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+  - source: null
+    destination: null
+permissions:
+  - object: /var/www/html
+    pattern: '**'
+    except: null
+    owner: apache
+    group: apache
+    mode: 755
+    acls:
+      - null
+    context:
+      user: null
+      type: null
+      range: null
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: null
+      timeout: null
+      runas: null
+    - location: null
+      timeout: null
+      runas: null
+  BeforeInstall:
+    - location: scripts/installapache.sh
+      timeout: null
+      runas: root
+    - location: scripts/startapache.sh
+      timeout: null
+      runas: root
+  AfterInstall:
+    - location: scripts/restartapache.sh
+      timeout: null
+      runas: root
+    - location: null
+      timeout: null
+      runas: null
+  ApplicationStart:
+    - location: null
+      timeout: null
+      runas: null
+    - location: null
+      timeout: null
+      runas: null
+  ValidateService:
+    - location: null
+      timeout: null
+      runas: null
+    - location: null
+      timeout: null
+      runas: null
+Metadata:
+  'AWS::CloudFormation::Designer':
+    fa22f8b5-9cde-4be1-a10f-a23241148f1c:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -100
+        'y': -20
+      z: 0
+Resources:
+  EC2I4199O:
+    Type: 'AWS::EC2::Instance'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: fa22f8b5-9cde-4be1-a10f-a23241148f1c
