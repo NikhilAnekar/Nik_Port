@@ -124,7 +124,12 @@
         $('.popupCloseButton').click(function(){
             $('.hover_bkgr_fricc').hide();
         });
+            
+            $('#Myimg').click(function(){
+  		$('#Mymodal').modal('show')
+	});
+            
     });
 
-    })(jQuery);
 
+    })(jQuery);
