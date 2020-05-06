@@ -8,6 +8,8 @@
           $('#mainNav').addClass('navbar-reduce');
         }
       })
+        
+     $('[data-toggle="tooltip"]').tooltip()
 
       // Preloader
       $(window).on('load', function () {
@@ -125,11 +127,11 @@
             $('.hover_bkgr_fricc').hide();
         });
             
-            $('#Myimg').click(function(){
-  		$('#Mymodal').modal('show')
-	});
-            
-    });
-
+        $('#Myimg').click(function () {
+                $('#Mymodal').modal('show')
+         });
+        
+         });
+        
 
     })(jQuery);

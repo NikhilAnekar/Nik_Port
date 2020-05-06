@@ -186,7 +186,7 @@
     <!--    About Me Section End-->
     
     <!--    Work Section start -->
-    <section id="service" class="services-mf route">
+    <section id="service">
     <div class="container">
     <div class="title-box text-center">
                         <h3 class="title-a">
@@ -196,18 +196,32 @@
     <!--/ Section Professional Work Starts /-->
 <!--    <section id="service" class="services-mf route">-->
 <!--        <div class="container">-->
+        <div id="exTab1" class="container">	
+          <ul class="nav nav-pills nav-justified">
+              <li class="active"><a data-toggle="pill" href="#prof"><button type="button" class="btn btn-info">
+                  Professional Work<span class="badge badge-light">3</span></button>
+                      </a></li>
+              <li><a data-toggle="pill" href="#volunteer"><button type="button" class="btn btn-info">
+                          Volunteer experience <span class="badge badge-light">3</span></button>
+                      </a></li>
+          </ul>
+            
+<!--
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box text-center">
                         <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapse1" data-target="#collapse1">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapse1" href="#collapse1">
                                 Professional Work <span class="badge badge-light">3</span>
                             </button>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="collapse1">
+-->
+            <div class="tab-content">
+        <div id="prof" class="tab-pane fade in active">
+<!--            <div class="collapse" id="collapse1">-->
                 <div class="row">
                     <div class="col-md-4"><span class="badge badge-secondary" style="float: right">Latest</span>
                         <div class="service-box" style="width: 350px ; height: 250px;">
@@ -382,31 +396,38 @@
                     </div>
                     <!--End of Modal Button Design-->
                 </div>
-            </div>
+                     </div>
 <!--    </section>-->
     <!--/ Section Professional Work End /-->
 
     <!-- Create Casual Work-->
 <!--    <section id="service" class="services-mf route">-->
 <!--        <div class="container">-->
+<!--
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box text-center">
+                        <li>
                         <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                 Volunteer experience <span class="badge badge-light">3</span>
                             </button>
                         </p>
+                        </li>
+-->
 <!--
                         <p class="subtitle-a">
                             <b>"A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well." Jeff Bezos</b>
                         </p>
                         <div class="line-mf"></div>
 -->
+<!--
                     </div>
                 </div>
             </div>
-            <div  class="collapse" id="collapse2">
+-->
+             <div id="volunteer" class="tab-pane fade">
+<!--            <div  class="collapse" id="collapse2">-->
                 <div class="row">
                     <div class="col-md-4"><span class="badge badge-primary" style="float: right">Current</span>
                         <div class="service-box" style="width: 350px ; height: 250px;">
@@ -556,66 +577,15 @@
                     </div>
                     <!--End of Modal Button for DNA -->                    
                 </div>
-            </div>
+                 </div>
 <!--    </section>-->
     <!--/ Section Services End /-->
+        </div>
+        </div>
         </div>
     </section>
      <!--    Work Section End -->
     
-<!--  Section Counts Start  -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">4</p>
-                            <span class="counter-text">Projects Worked On</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">5</p>
-                            <span class="counter-text">YEARS OF EXPERIENCE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ios-people"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">72</p>
-                            <span class="counter-text">Post-grad Grades</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">7</p>
-                            <span class="counter-text">AWARD WON</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--  Section Counts End  -->
     
     <!--/ Section Portfolio Education Start/-->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -637,7 +607,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="work-box">
-                        <a href="img/work-1.jpg" data-lightbox="Whats up">
+                        <a href="blog-single.html" target="_blank">
                             <div class="work-img" style="width: 350px; height: 300px">
                                 <img src="img/monash-university-logo%20-%20Copy.png" alt="" class="img-fluid">
                             </div>
@@ -651,7 +621,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
+                                            <span class="ion-ios-plus-outline" data-toggle="modal" data-target="#siemensModal" ></span>
                                         </div>
                                     </div>
                                 </div>
@@ -659,6 +629,52 @@
                         </a>
                     </div>
                 </div>
+                
+                 <!--Start of Modal for Monash-->
+                    <div class="modal fade" id="siemensModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title"> Siemens Healthineers – (Client of TCS) <br> Duration: 1 year 10 months
+                                        <br>Project: Siemens Healthineers <br> Location: Mumbai, India</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <ol>
+                                        <li class="list-group-item">Handle client calls and understand the new requirements.</li>
+                                        <li class="list-group-item">Document current process (AS-IS) and new process (To Be) and analyze the gap in the business process.</li>
+                                        <li class="list-group-item">Worked majorly on SAP PM, MM and SD modules in SAP S/4 HANA.</li>
+                                        <li class="list-group-item">Managed SAP SD, FICO, PM configuration and master data</li>
+                                        <li class="list-group-item">Worked as Super user to carry master data changes.</li>
+                                        <li class="list-group-item">SAP configuration/customization, managing change requests and perform testing.</li>
+                                        <li class="list-group-item">Worked on customer creation, activity planning, pricing and billing.</li>
+                                        <li class="list-group-item">Attending user/ technician calls, logging service notifications, assigning priorities and then processing the</li>
+                                        <li class="list-group-item">SAP Customization includes creation of maintenance plans, DIP profiles, PM/CS configuration, handling master</li>
+                                        <li class="list-group-item">Worked across areas of sales & service orders, service notifications, maintenance contracts.</li>
+                                        <li class="list-group-item">Involved in end-to-end full cycle implementation of new project</li>
+                                        <li class="list-group-item">Manage bundled change requests in every quarter including estimation and provide post-implementation support.</li>
+                                        <li class="list-group-item">Provide BPI and BPR for existing processes.</li>
+                                        <li class="list-group-item">Working experience of different tools like SAP Solman, JIRA, Servicenow, Sharp and ITSM.</li>
+                                    </ol>
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of Modal for Monash-->
+  
+                
+                
                 <div class="col-md-4">
                     <div class="work-box">
                         <a href="img/work-2.jpg" data-lightbox="Whats up">
@@ -686,8 +702,9 @@
                 <div class="col-md-4">
                     <div class="work-box">
                         <a href="img/ITILv1.jpg" data-lightbox="gallery-mf">
-                            <a href="img/insta_New.jpg" data-lightbox="gallery-mf">
-                                <a href="img/Agile.jpg" data-lightbox="gallery-mf">
+                            <a href="img/Cloud%20Computing%20(General)_Foundation%20E-certficate-page-001.jpg" data-lightbox="gallery-mf">
+                                    <a href="img/Internet%20Of%20Things_Foundation%20E-certficate-page-001.jpg" data-lightbox="gallery-mf">
+                                         <a href="img/Agile.jpg" data-lightbox="gallery-mf">
                                     <div class="work-img" style="width: 350px; height: 300px">
                                         <img src="img/Agile.jpg" alt="" class="img-fluid">
                                     </div>
@@ -706,16 +723,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a></a></a>
+                                        </a></a></a></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
   <!--/ Section Portfolio Education End /-->
-
-  
-
 
     <!-- Start of Certifications-->
     <!--<section id="work" class="portfolio-mf sect-pt4 route">
@@ -814,19 +828,149 @@
     <!--/ Section Certification End /-->
     
     <!--Section Key SKills Start -->
+    <section id="keyskill" class="services-mf route">
+    <div class="container">
+    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Key Skills
+                        </h3>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-3 col-md-4 mt-2">
+          <div class="icon-box"><span class="badge badge-primary" style="float: right">Core</span>
+              <button type="button" class="btn btn-outline-primary">Requirement Gathering</button>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+                          <button type="button" class="btn btn-outline-primary">Project Testing</button>
+            
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+              <div class="mr-0">
+                          <button type="button" class="btn btn-outline-primary">Stakeholder Management</button>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 mt-4">
+          <div class="icon-box">
+              <div class="ml-20">
+           <button type="button" class="btn btn-outline-primary">Customer Service</button>
+          </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <button type="button" class="btn btn-outline-primary">SAP Implementation</button>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-2">
+          <div class="icon-box"><span class="badge badge-success" style="float: right">Hot</span>
+            <button type="button" class="btn btn-outline-primary">Project Documentation</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <button type="button" class="btn btn-outline-primary">Business Process Consultant</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4">
+            <div class="ml-4">
+          <div class="icon-box">
+              <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="I'm Still learning"><span class="spinner-border spinner-border-sm"></span>UI Designing</button>
+            </div></div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <button type="button" class="btn btn-outline-primary">Budget estimation</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+           <button type="button" class="btn btn-outline-primary">Problem Solving</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+                         <button type="button" class="btn btn-outline-primary">IT Project Management</button>
+           </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4"><span class="badge badge-danger" style="float: right">Expert</span>
+          <div class="icon-box">
+                       <button type="button" class="btn btn-outline-primary">Microsoft tools</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <!--Section Key Skills End-->
+    <!--  Section Counts Start  -->
+     <section id="count" class="services-mf route">
+    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            
+                        </h3>
+        </div>
     <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-        <h1 style="color: white">Key Skills</h1>
         <div class="overlay-mf"></div>
         <div class="container">
-
             <div class="row">
-
-
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">4</p>
+                            <span class="counter-text">Projects Worked On</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">5</p>
+                            <span class="counter-text">YEARS OF EXPERIENCE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">72</p>
+                            <span class="counter-text">Post-grad Grades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">7</p>
+                            <span class="counter-text">AWARD WON</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--Section Key Skills End-->
-    
+<!--  Section Counts End  -->
+
     <!--/ Section Testimonials Start /-->
     <!--  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
