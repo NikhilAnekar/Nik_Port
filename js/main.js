@@ -1,6 +1,6 @@
     (function ($) {
         "use strict";
-        var nav = $('nav');
+      var nav = $('nav');
       var navHeight = nav.outerHeight();
 
       $('.navbar-toggler').on('click', function() {
@@ -126,12 +126,24 @@
         $('.popupCloseButton').click(function(){
             $('.hover_bkgr_fricc').hide();
         });
+
+    });
+
             
         $('#Myimg').click(function () {
                 $('#Mymodal').modal('show')
          });
         
-         });
         
+
+        $('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+            
+            $('#myTab a[href="#prof"]').tab('show') // Select tab by name
+$('#myTab li:first-child a').tab('show') // Select first tab
+$('#myTab li:last-child a').tab('show') // Select last tab
+$('#myTab li:nth-child(3) a').tab('show') // Select third tab
+})
 
     })(jQuery);

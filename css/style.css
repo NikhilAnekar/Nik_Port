@@ -1449,10 +1449,26 @@ footer .credits a {
 }
 
 #exTab1 .tab-content {
-  color : white;
+  color : black;
   padding : 5px 15px;
 }
 
 #exTab1 .nav-pills > li > a {
   border-radius: 0;
+}
+
+/*--- Zoom Hover---*/
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }

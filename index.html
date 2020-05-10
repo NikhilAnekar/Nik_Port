@@ -197,12 +197,12 @@
 <!--    <section id="service" class="services-mf route">-->
 <!--        <div class="container">-->
         <div id="exTab1" class="container">	
-          <ul class="nav nav-pills nav-justified">
-              <li class="active"><a data-toggle="pill" href="#prof"><button type="button" class="btn btn-info">
-                  Professional Work<span class="badge badge-light">3</span></button>
-                      </a></li>
-              <li><a data-toggle="pill" href="#volunteer"><button type="button" class="btn btn-info">
-                          Volunteer experience <span class="badge badge-light">3</span></button>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active zoom" id="pills-home-tab" data-toggle="pill" href="#prof" role="tab" aria-controls="pills-home" aria-selected="true">Professional Work<span class="badge badge-light">3</span>
+                    </a></li>            
+              
+              <li><a class="nav-link zoom" id="pills-profile-tab" data-toggle="pill" href="#volunteer" role="tab" aria-controls="pills-profile" aria-selected="false" style="margin-left: 100px">Volunteer Work<span class="badge badge-light">3</span>
                       </a></li>
           </ul>
             
@@ -219,8 +219,11 @@
                 </div>
             </div>
 -->
-            <div class="tab-content">
-        <div id="prof" class="tab-pane fade in active">
+            <div class="tab-content" id="pills-tabContent">
+<!--        <div id="prof" class="tab-pane fade in active">-->
+            
+             <div class="tab-pane fade show active" id="prof" role="tabpanel" aria-labelledby="pills-home-tab">
+            
 <!--            <div class="collapse" id="collapse1">-->
                 <div class="row">
                     <div class="col-md-4"><span class="badge badge-secondary" style="float: right">Latest</span>
@@ -426,7 +429,8 @@
                 </div>
             </div>
 -->
-             <div id="volunteer" class="tab-pane fade">
+<!--             <div id="volunteer" class="tab-pane fade">-->
+                 <div class="tab-pane fade" id="volunteer" role="tabpanel" aria-labelledby="pills-profile-tab">
 <!--            <div  class="collapse" id="collapse2">-->
                 <div class="row">
                     <div class="col-md-4"><span class="badge badge-primary" style="float: right">Current</span>
@@ -677,7 +681,7 @@
                 
                 <div class="col-md-4">
                     <div class="work-box">
-                        <a href="img/work-2.jpg" data-lightbox="Whats up">
+                        <a href="img/BE_Convocation.jpeg" data-lightbox="Whats up">
                             <div class="work-img" style="width: 350px; height: 300px">
                                 <img src="img/MU_logo.jpg" alt="" class="img-fluid">
                             </div>
@@ -837,6 +841,10 @@
         </div>
         <div class="container-fluid">
         <div class="row">
+            
+            
+            
+            
         <div class="col-lg-3 col-md-4 mt-2">
           <div class="icon-box"><span class="badge badge-primary" style="float: right">Core</span>
               <button type="button" class="btn btn-outline-primary">Requirement Gathering</button>
@@ -859,7 +867,7 @@
         <div class="col-lg-3 col-md-5 mt-4">
           <div class="icon-box">
               <div class="ml-20">
-           <button type="button" class="btn btn-outline-primary">Customer Service</button>
+           <button type="button" class="btn btn-outline-primary" style="margin-left: 25px">Customer Service</button>
           </div>
             </div>
         </div>
@@ -882,12 +890,12 @@
         <div class="col-lg-3 col-md-6 mt-4">
             <div class="ml-4">
           <div class="icon-box">
-              <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="I'm Still learning"><span class="spinner-border spinner-border-sm"></span>UI Designing</button>
+              <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="I'm Still learning" style="margin-left: 20px"><i class="fa fa-refresh fa-spin"></i>UI Designing</button>
             </div></div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <button type="button" class="btn btn-outline-primary">Budget estimation</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-refresh fa-spin" style="margin-left: 10px "></i>Budget estimation</button>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -909,6 +917,9 @@
       </div>
     </div>
     </div>
+    
+        <button class="btn success">Success</button>
+
     </section>
     <!--Section Key Skills End-->
     <!--  Section Counts Start  -->
@@ -968,7 +979,7 @@
                 </div>
             </div>
         </div>
-    </div>
+         </div></section>
 <!--  Section Counts End  -->
 
     <!--/ Section Testimonials Start /-->
