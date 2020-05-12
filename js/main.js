@@ -134,6 +134,10 @@
                 $('#Mymodal').modal('show')
          });
         
+        AOS.init({
+  duration: 1200,
+})
+        
         var root = document.getElementById('portrait');
 
 var mouse_monitor = function(e) {

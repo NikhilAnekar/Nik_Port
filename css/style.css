@@ -1473,59 +1473,81 @@ footer .credits a {
   transform: scale(1.5); 
 }
 
-/*--Image Effect on Home page--*/
-
-.portrait{
-   width: 80%;
-   max-width: 600px;
-   margin: 0 auto;
-   height: 600px;
-   position: relative;
-   overflow: hidden;
-   
-   &:hover{
-      .hover{         
-         @include opacity(0.4);
-      }
-      .hover-img{
-         @include transform(translate(var(--translate-x), var(--translate-y)));
-      }
-   }
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
-.fill{
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 5;
+/*--Parallax Image--*/
+
+
+.parallaxWork {
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover; 
 }
 
-.z-10{
-   z-index: 10;
+/*---Pills Tab---*/
+.pills-rounded .nav-item .nav-link {
+border-radius: 10em;
+}
+.pills-light-purple .nav-item .nav-link.active {
+background-color: #ba68c8;
 }
 
-.hover{
-   @include transition(all 380ms cubic-bezier(.16,.01,.77,1));
-   @include opacity(0);
-   //padding: 0 30px 20px 0;
+.pills-outline-red .nav-item .nav-link {
+border: 2px solid #fff;
+color: #666;
+background-color: transparent;
+}
+.pills-outline-red .nav-item .nav-link:hover {
+border: 2px solid #eee;
+}
+.pills-outline-red .nav-item .nav-link.active {
+border: 2px solid #f44336;
+color: #f44336;
+}
+.pills-outline-red .nav-item .nav-link.active:hover {
+border: 2px solid #f44336;
+color: #f44336;
 }
 
-.hover-img{   
-   @include transition(opacity,transform 320ms cubic-bezier(.16,.01,.77,1));
-   
-   &:after{
-      content: '';
-      @extend .fill;
-      background-color: #FFEB3B;
-      mix-blend-mode: color;   //overlay, darken
-   }
+.pills-outline-green .nav-item .nav-link {
+border: 2px solid #fff;
+color: #666;
+background-color: transparent;
+}
+.pills-outline-green .nav-item .nav-link:hover {
+border: 2px solid #eee;
+}
+.pills-outline-green .nav-item .nav-link.active {
+border: 2px solid #4caf50;
+color: #4caf50;
+}
+.pills-outline-green .nav-item .nav-link.active:hover {
+border: 2px solid #4caf50;
+color: #4caf50;
 }
 
-.cover-img{
-   @include background-size(cover);
-   background-position: top center;
-   background-repeat: no-repeat;
-   background-image: url(https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7c08dc233ca06b278c5129d67cedb4c8);
+/*-- Text Animation--*/
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-50px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-50px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
